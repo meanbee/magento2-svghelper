@@ -1,0 +1,5 @@
+<config>
+    <type name="Magento\Framework\View\Element\BlockFactory">
+        <plugin name="set_svg_helper" type="Meanbee\SVGHelper\Plugin\BlockPlugin" sortOrder="1" />
+    </type>
+</config>
