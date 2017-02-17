@@ -7,7 +7,6 @@ Simple module that provides a block level helper for reading in an SVG files sou
 Install this extension via Composer:
 
 ```
-composer config repositories.meanbee_svghelper vcs https://github.com/meanbee/magento2-svghelper
 composer require meanbee/magento2-svghelper
 ```
 
