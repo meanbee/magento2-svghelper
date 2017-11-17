@@ -2,7 +2,7 @@
   "name": "meanbee/magento2-svghelper",
   "description": "Magento 2 module that provides a block level helper for reading in an SVG files source from a theme",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": [
     "Commercial"
   ],
@@ -13,7 +13,7 @@
     }
   },
   "require": {
-    "magento/framework": "100.1.*",
+    "magento/framework": "^101.0.0",
     "psr/log": "~1.0"
   },
   "authors": [
