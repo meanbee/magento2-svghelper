@@ -6,17 +6,16 @@ use \Magento\Framework\App\Helper\AbstractHelper;
 
 class Data extends AbstractHelper
 {
-    protected $_assetSource;
-    protected $_assetRepository;
+    protected $assetSource;
+    protected $assetRepository;
 
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Framework\View\Asset\Source $assetSource,
         \Magento\Framework\View\Asset\Repository $assetRepository
-    )
-    {
-        $this->_assetSource = $assetSource;
-        $this->_assetRepository = $assetRepository;
+    ) {
+        $this->assetSource = $assetSource;
+        $this->assetRepository = $assetRepository;
 
         parent::__construct($context);
     }
@@ -28,8 +27,7 @@ class Data extends AbstractHelper
      */
     public function getViewSvg($path)
     {
-        $file = $this->_assetRepository->createAsset($path);
-        return $this->_assetSource->getContent($file);
+        $file = $this->assetRepository->createAsset($path);
+        return $this->assetSource->getContent($file);
     }
-
 }
